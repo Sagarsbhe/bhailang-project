@@ -1,0 +1,72 @@
+hi bhai
+  bol bhai "Automated Task Runner";
+
+  bhai ye hai task1 = "Print Hello";
+  bhai ye hai task2 = "Add Numbers";
+  bhai ye hai task3 = "Generate Report";
+  bhai ye hai task4 = "Fetch Data";
+  bhai ye hai task5 = "Clean Up";
+
+  bhai ye hai task6 = "Calculate Fibonacci";
+  bhai ye hai task7 = "Perform Division";
+  bhai ye hai task8 = "Perform Multiplication";
+  bhai ye hai task9 = "Perform Subtraction";
+
+  bhai ye hai currentTask = 1;
+
+  jab tak bhai (currentTask <= 9) {
+    agar bhai (currentTask == 1) {
+      bol bhai "Executing Task ", currentTask, ": ", task1;
+      bol bhai "Hello World!";
+    } nahi to bhai (currentTask == 2) {
+      bhai ye hai num1 = 5;
+      bhai ye hai num2 = 7;
+      bhai ye hai result = num1 + num2;
+      bol bhai "Executing Task ", currentTask, ": ", task2;
+      bol bhai "Result: ", result;
+    } nahi to bhai (currentTask == 3) {
+      // Your report generation logic here
+      bol bhai "Executing Task ", currentTask, ": ", task3;
+      bol bhai "Report generated successfully!";
+    } nahi to bhai (currentTask == 4) {
+      // Your data fetching logic here
+      bol bhai "Executing Task ", currentTask, ": ", task4;
+      bol bhai "Data fetched successfully!";
+    } nahi to bhai (currentTask == 5) {
+      bol bhai "Executing Task ", currentTask, ": ", task5;
+      bol bhai "Clean up completed!";
+    } nahi to bhai (currentTask == 6) {
+      bhai ye hai fib1 = 0;
+      bhai ye hai fib2 = 1;
+      jab tak bhai (fib2 < 10) {
+        bol bhai "Executing Task ", currentTask, ": ", task6;
+        bol bhai "Fibonacci Sequence: ", fib1;
+        bhai ye hai temp = fib2;
+        fib2 = fib1 + fib2;
+        fib1 = temp;
+      }
+    } nahi to bhai (currentTask == 7) {
+      bhai ye hai num1 = 20;
+      bhai ye hai num2 = 5;
+      bhai ye hai result = num1 / num2;
+      bol bhai "Executing Task ", currentTask, ": ", task7;
+      bol bhai "Result: ", result;
+    } nahi to bhai (currentTask == 8) {
+      bhai ye hai num1 = 8;
+      bhai ye hai num2 = 6;
+      bhai ye hai result = num1 * num2;
+      bol bhai "Executing Task ", currentTask, ": ", task8;
+      bol bhai "Result: ", result;
+    } nahi to bhai (currentTask == 9) {
+      bhai ye hai num1 = 15;
+      bhai ye hai num2 = 7;
+      bhai ye hai result = num1 - num2;
+      bol bhai "Executing Task ", currentTask, ": ", task9;
+      bol bhai "Result: ", result;
+    }
+
+    currentTask += 1;
+  }
+
+  bol bhai "All tasks completed!";
+bye bhai
